@@ -1,3 +1,11 @@
 theme: jekyll-theme-minimal
 title: Anisa's homepage
 description: Bookmark this to keep an eye on my project updates!
+defaults: 
+- 
+  scope:
+    path: "posts"
+  values:
+    author: Annisa Masruroh
+    category: posting
+    tags: [whasthat??, coolkidz]
