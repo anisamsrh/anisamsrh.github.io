@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <title>{{ page.title | default: site.title }}</title>
+    <style>
+        /* CSS Dasar Sederhana */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+            background: #fff;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        header {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .contact-links {
+            margin-top: 10px;
+        }
+        .contact-links a {
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        .project-list {
+            list-style: none;
+            padding: 0;
+        }
+        .project-item {
+            background: #f9f9f9;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 4px solid #3498db;
+        }
+
+        .project-thumbnail {
+            width: 100%;
+            max-width: 300px; /* Atur batas maksimal lebar gambar */
+            height: auto;
+            border-radius: 8px; /* Membuat sudut gambar sedikit membulat */
+            margin-bottom: 10px;
+            display: block;
+            }
+
+        .btn-github {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #24292e; /* Warna gelap khas GitHub */
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            }
+
+            .btn-github:hover {
+            background-color: #0366d6; /* Berubah biru saat di-hover */
+            color: white;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>{{ site.title }}</h1>
+            <p>{{ site.description }}</p>
+            <div class="contact-links">
+                {% if site.email %}
+                    <a href="mailto:{{ site.email }}">Email</a>
+                {% endif %}
+                
+                {% if site.linkedin %}
+                    <a href="{{ site.linkedin }}" target="_blank">LinkedIn</a>
+                {% endif %}
+                
+                {% if site.github %}
+                    <a href="{{ site.github }}" target="_blank">GitHub</a>
+                {% endif %}
+            </div>
+        </header>
+
+        <main>
+            <!-- Di sinilah konten setiap halaman akan dimasukkan -->
+            {{ content }}
+        </main>
+        
+        <footer style="margin-top: 30px; text-align: center; font-size: 0.9em; color: #777;">
+            &copy; 2026 {{ site.author }}. Dibangun dengan Jekyll.
+        </footer>
+    </div>
+
+</body>
+</html>

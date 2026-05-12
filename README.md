@@ -1,3 +1,6 @@
-# Hi, Pals
-
-has been years that i visit this repository, haha, let's put it on again and try some new things
+# Anisa's Personal Website
+## Create new post
+1. Run in terminal
+```bash
+rake post title="Desain UI Aplikasi Kasir"
+```

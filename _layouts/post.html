@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<article>
+    <header style="margin-bottom: 20px;">
+        <h2>{{ page.title }}</h2>
+        <p style="color: #777; font-size: 0.9em;">Dipublikasikan pada: {{ page.date | date: "%d %B %Y" }}</p>
+    </header>
+
+    <div class="post-content">
+        {{ content }}
+    </div>
+    
+    <div style="margin-top: 30px;">
+        <a href="{{ '/' | relative_url }}">&larr; Kembali ke Beranda</a>
+    </div>
+</article>

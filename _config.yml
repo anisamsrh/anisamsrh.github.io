@@ -1,13 +1,12 @@
----
-theme: jekyll-theme-minimal
-title: Anisa's homepage
-description: Bookmark this to keep an eye on my project updates!
-defaults: 
-- 
-  scope:
-    path: "posts"
-  values:
-    author: Annisa Masruroh
-    category: posting
-    tags: [whasthat??, coolkidz]
----
+title: N. Anisa Masruroh
+description: "Hey, I'm Anisa! 👋 I'm a Computer Engineering student who loves bringing ideas to life. I don't just stick to the screen—I build full-stack websites, wire up smart IoT systems, and tinker with robotics. Basically, if it involves code, circuits, or moving parts, I'm probably building it."
+author: N. Anisa Masruroh
+url: "https://anisamsrh.github.io" # Ganti nanti dengan URL GitHub Pages Anda
+baseurl: ""
+
+email: "nuranisahidayatulmasruroh@gmail.com"
+linkedin: "https://linkedin.com/in/nuranisahm"
+github: "https://github.com/anisamsrh"
+
+# Konfigurasi agar Markdown berfungsi dengan baik
+markdown: kramdown
